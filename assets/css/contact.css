@@ -237,7 +237,12 @@ body {
 }
 
 
-
+.contactButton:hover{
+   
+    font-weight: 700;
+    
+    background-color: #be5b05;
+}
 
 
 @media only screen and (max-width: 600px) {
