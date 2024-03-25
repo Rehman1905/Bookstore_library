@@ -33,10 +33,12 @@ document.querySelector('#searchBtn').addEventListener('click', async function (e
             spinner.style.display = 'none'
             carousel.style.display = 'block'
             button.style.display='block'
-            localStorage.setItem('book', searchInp.value)
-            searchInp.value = ''
         }, 2000)
+        localStorage.setItem('book', searchInp.value)
+
         bookSearch(searchInp.value)
+        searchInp.value = ''
+
     } else {
         alert('enter book name')
     }
@@ -114,12 +116,12 @@ async function bookSearch(text) {
                 continue
             } else {
                 if(say==0 && count==0){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         section4.style.display = 'block'
-                    },250)
+                    // },250)
                     carusel.style.display = 'none'
                     button.style.display='none'
-                    // spinner.style.display='none'
+                    spinner.style.display='none'
                 }
                     
                 

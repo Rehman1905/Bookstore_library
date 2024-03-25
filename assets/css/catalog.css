@@ -223,7 +223,7 @@ body {
 }
 .all_wrapper{
     justify-content: center;
-    width: 265%;
+    width: 300%;
 }
 @media  (max-width:768px) {
   .all_wrapper{

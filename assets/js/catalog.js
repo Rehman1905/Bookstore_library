@@ -135,8 +135,8 @@ function show(e) {
                 div.append(divImg)
                 }
                 img.src = data[i].imgUrl
-                h4.textContent = data[i].bookName
-                p.textContent = data[i].authorName
+                h4.textContent = data[i].bookName.slice(0,25)
+                p.textContent = data[i].authorName.slice(0,20)
                 button.textContent = 'Read More'
                 button.id = i
                 
@@ -173,8 +173,8 @@ function show(e) {
                    
                });
             imgBest.src = data[i].imgUrl
-            h4Best.textContent = data[i].bookName
-            pBest.textContent = data[i].authorName
+            h4Best.textContent = data[i].bookName.slice(0,25)
+            pBest.textContent = data[i].authorName.slice(0,20)
             buttonBest.textContent = 'Read More'
             buttonBest.id = i
             divSlideBest.classList.add('swiper-slide')
@@ -209,8 +209,8 @@ function show(e) {
             divImgNew.classList.add('divImg')
             divSlideNew.append(divImgNew)
             imgNew.src = data[i].imgUrl
-            h4New.textContent = data[i].bookName
-            pNew.textContent = data[i].authorName
+            h4New.textContent = data[i].bookName.slice(0,25)
+            pNew.textContent = data[i].authorName.slice(0,20)
             buttonNew.textContent = 'Read More'
             buttonNew.id = i
             divSlideNew.classList.add('swiper-slide')
