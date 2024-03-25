@@ -132,7 +132,11 @@ body{
     }
     
     /* footer top */
-    
+    .maindiv3 {
+        border: 2px solid gray;
+        padding: 10px;
+    }
+
     .footer_section1 {
       justify-content: center;
       align-items: center;
@@ -324,6 +328,10 @@ body{
         padding: 50px;
         flex-wrap: wrap;
       }
+      .maindiv3 {
+        border: 2px solid gray !important;
+        padding: 10px;
+    }
       .maindiv3 p {
         line-height: 2.5px;
       }
@@ -410,6 +418,7 @@ body{
     flex-direction: column-reverse;
     align-items: center;
   }
+
   .footer-responsive a {
     margin-left: 5px;
   font-size: 14px;
@@ -437,7 +446,7 @@ body{
   .maindiv3 p {
     margin-top: 50px;
     line-height: 20px;
-    overflow: hidden;
+
   }
   .maindiv1 {
     display: flex;
@@ -561,4 +570,8 @@ body{
   .maindiv3 p {
     max-height: 300px;
     overflow: auto;
+  }
+  .maindiv3 {
+    overflow: scroll;
+    border: none;
   }
