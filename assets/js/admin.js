@@ -24,4 +24,10 @@ document.querySelector('#logout').addEventListener('click', function (e) {
     window.location.href = 'admin.html'
 })
 const section4 = document.querySelector('.section4')
-
+function link(){
+    navbar.style.display = 'none'
+    img2.style.display = 'block'
+    exit.style.display = 'none'
+    extra.style.display = 'none'
+    main.style.display = 'block'
+}
