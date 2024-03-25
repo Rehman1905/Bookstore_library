@@ -330,6 +330,7 @@ body{
       }
       .maindiv3 {
         border: 2px solid gray !important;
+        width: auto;
         padding: 10px;
     }
       .maindiv3 p {
@@ -571,7 +572,10 @@ body{
     max-height: 300px;
     overflow: auto;
   }
+  .maindiv3::-webkit-scrollbar {
+    display: none;
+  }
   .maindiv3 {
-    overflow: scroll;
     border: none;
   }
+  
