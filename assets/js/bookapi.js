@@ -19,7 +19,6 @@ const last_search = document.querySelector('.last_search')
 document.querySelector('input').addEventListener('input', async function (event) {
     last_search.innerHTML = ''
     var dəyər = event.target.value;
-    console.log("Daxil edilən dəyər:", dəyər);
     try {
         const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${dəyər}`);
         const result = await response.json();
@@ -33,27 +32,30 @@ document.querySelector('input').addEventListener('input', async function (event)
             div.classList.add('searchBookDiv')
             last_search.append(div)
             div.addEventListener('click', function (e) {
-            console.log(i.volumeInfo)
             const best=i.volumeInfo.averageRating
-            const data=i.volumeInfo.publishedDate.slice(0,4)
-            console.log(data)
+            if(i.volumeInfo.publishedDate!==undefined){
+                const data=i.volumeInfo.publishedDate.slice(0,4)
                 if(parseInt(data)>=2020){
                     newBook.checked=true
                 }
-                if(parseInt(best)>=4){
-                    besteller.checked=true
-                }
+                date.value=data.slice(0,4)
+
+            }
+                
+                // if(parseInt(best)>=4){
+                //     besteller.checked=true
+                // }
                 bookName.value = i.volumeInfo.title
                 authorName.value = i.volumeInfo.authors
                 imgUrl.value = i.volumeInfo.imageLinks.smallThumbnail
                 description.value = i.volumeInfo.description
-                date.value=data.slice(0,4)
                 last_search.innerHTML=''
                 bookType.value = i.volumeInfo.categories
             })
         }
     } catch (error) {
-        console.error(error);
+        // var result=err instanceof Error
+        // console.log(result)
     }
 });
 
