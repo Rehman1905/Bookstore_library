@@ -218,20 +218,17 @@ body {
 /* .swiper-button-prev{
     left: 10px;
 } */
-.swiper{
+/* .swiper{
   flex-grow:1 ;
-}
-.all_wrapper{
-    justify-content: center;
-    width: 300%;
-}
+} */
+
 @media  (max-width:768px) {
-  .all_wrapper{
+  /* .all_wrapper{
     width: 700%;
-  }
-  .new_wrapper{
+  } */
+  /* .new_wrapper{
     width: 200%;
-  }
+  } */
   .imgCatalog{
     /* width: 100%; */
     height: 130px;
@@ -351,7 +348,7 @@ body {
   width: 100%;
 }
 
-.besteller_wrapper,.new_wrapper{
+.all_center{
   justify-content: center;
 }
   .section5{

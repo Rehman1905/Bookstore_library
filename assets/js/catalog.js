@@ -85,8 +85,6 @@ onValue(ref(db, 'option'), snapshot => {
             container.style.display = 'none';
             spinner2.style.display='block'
             spinner3.style.display='block'
-
-
 setTimeout(function(){
     container.style.display = 'block';
     spinner.style.display = 'none';
@@ -126,8 +124,12 @@ function show(e) {
                         bashla()
                         goster();
                     }
-                    
                 });
+                if(count>5){
+                    swiper_wrapper.classList.remove('all_center')
+                }else{
+                swiper_wrapper.classList.add('all_center')
+                }
                 if(data[i].newBook===true){
                     const divImg=document.createElement('div')
                 divImg.textContent='New'
@@ -160,7 +162,7 @@ function show(e) {
                 const divImgBest=document.createElement('div')
             divImgBest.textContent='New'
             divImgBest.classList.add('divImg')
-            divBest.append(divImg)
+            divBest.append(imgBest)
             }
             buttonBest.addEventListener("click", function() {
                 let buttonId = this.id;
@@ -195,6 +197,7 @@ function show(e) {
             const pNew = document.createElement('p')
             const buttonNew = document.createElement('button')
             const divImgNew=document.createElement('div')
+            
             buttonNew.addEventListener("click", function() {
                 let buttonId = this.id;
                 exportButtonId(buttonId)
@@ -222,10 +225,12 @@ function show(e) {
             
             divNew.append(imgNew, h4New, pNew, buttonNew)
             divSlideNew.append(divNew)
+            
             new_wrapper.append(divSlideNew)
             }
+            
         }
-
+        
         if(count<5){
             sviper.style.display='flex';
             sviper.style.width = '100%'; 
@@ -257,9 +262,7 @@ setTimeout(function(){
 }, 1500);
 
 show('All');
-// var button = document.querySelector(".btn");
-// console.log(button)
-// Düyməyə tıklanma hadisəsini dinləyirik
+
 const catalogDiv=document.querySelector('.catalog')
 const bookPage=document.querySelector('.bookPag')
 const year=document.querySelector('.year')
