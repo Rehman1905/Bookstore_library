@@ -15,10 +15,13 @@ document.querySelector('#contactBtn').addEventListener('click',async function(e)
         return
     }else if(!contactEmail.value.includes('@')){
         alert('write the email correctly')
+        return
     }else if(contactAddres.value.trim()==''){
         alert('enter address')
+        return
     }else if(contactPhone.value.trim()==''){
         alert('enter phone')
+        return
     }
     const snapshot=push(ref(db,'JoinUs'))
     await get(ref(db,'contact')).then(e=>{
