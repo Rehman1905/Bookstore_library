@@ -33,6 +33,7 @@ joinBtn.addEventListener('click', async (e) => {
             },1000)
             ad.value = '';
             password.value = '';
+            sessionStorage.setItem('login','succesfull')
         } else {
             result.style.display = 'flex';
             result.style.backgroundColor='red'

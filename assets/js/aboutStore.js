@@ -30,12 +30,13 @@ document.querySelector('#add2').addEventListener('click', async function(e) {
     section4.classList.add('rightAnimation')
     section4.style.display = 'flex'
     setTimeout(function () {
-        section4.classList.remove('rightAnimation')
-        section4.classList.add('leftAnimation')
-    }, 1000)
-    setTimeout(function(){
-        section4.style.display='none'
-    },1500)
+        section4.classList.add('leftAnimation');
+        setTimeout(function() {
+            section4.classList.remove('rightAnimation');
+            section4.classList.remove('leftAnimation');
+            section4.style.display = 'none'
+        }, 750);
+    }, 1000);
     title.value = '';
     url.value = '';
     description.value = '';
