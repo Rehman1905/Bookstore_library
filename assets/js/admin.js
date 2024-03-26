@@ -23,5 +23,4 @@ document.querySelector('#logout').addEventListener('click', function (e) {
     e.preventDefault()
     window.location.href = 'admin.html'
 })
-const section4 = document.querySelector('.section4')
 

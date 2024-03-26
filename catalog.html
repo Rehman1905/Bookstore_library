@@ -17,7 +17,6 @@
     rel="stylesheet">
   <script src="./assets/js/catalog.js" type="module" defer></script>
   <link rel="stylesheet" href="./assets/css/catalog.css">
-  <script src="./assets/js/bookPage.js" type="module" defer></script>
 </head>
 
 <body>
@@ -84,32 +83,32 @@
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-      <section class="slider_container secBesteller">
+      <section class="slider_container secBesteller" style="width: 100%;">
         <h2 class="bestellerH2">Besteller</h2>
         <img class="spinner2" src="./assets/image/spinner.gif" alt="">
         <div class="container divSlider">
-          <div class="swiper card_slider">
+          <div class="swiper card_slider bestDiv" style="width: 100%;">
             <div class="swiper-wrapper besteller_wrapper">
 
             </div>
-            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
-        
+
       </section>
-      <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-      <section class="slider_container secNew">
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      <section class="slider_container secNew" style="width: 100%;">
         <h2 class="bestellerH2">New releases</h2>
         <img class="spinner3" src="./assets/image/spinner.gif" alt="">
 
-        <div class="container">
-          <div class="swiper card_slider">
-            <div class="swiper-wrapper new_wrapper">
+        <div class="container" >
+          <div id="newDiv" class="swiper  swiperAll card_slider" style="width: 100%;">
+            <div class="swiper-wrapper new_wrapper" >
 
             </div>
             <div class="swiper-button-next"></div>
