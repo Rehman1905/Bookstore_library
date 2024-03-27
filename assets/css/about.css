@@ -631,7 +631,6 @@ body{
   flex-direction: column-reverse;
   align-items: center;
   }
-
   }
 
   @keyframes slideInFromRight {
@@ -669,10 +668,3 @@ body{
  .leftAnimation{
      animation: slideInFromLeft 0.75s ease forwards;
  }
- /* @media screen and (max-width: 768px) {
-  .section4 {
-    width: 50%;
-    font-size: 20px;
-    top: 35px;
-  }
-} */
