@@ -254,7 +254,7 @@ function show(e) {
             sviper.style.flexGrow = '0';
             // swiper_wrapper.style.gap='0px'
             swiper_wrapper.style.gap = '10px'
-            new_wrapper.style.gap = '0px'
+            // new_wrapper.style.gap = '0px'
         }
     })
 }
