@@ -374,5 +374,6 @@ function updateCommit(e) {
 var backButton = document.querySelector('.backButton')
 backButton.addEventListener('click', function (e) {
     e.preventDefault()
-   window.location.href='https://rehman1905.github.io/Bookstore_library/catalog.html'
+   catalogDiv.style.display = 'none'
+    bookPage.style.display = 'block'
 })
