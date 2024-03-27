@@ -840,3 +840,38 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(95, 17, 1); 
 }
+@keyframes slideInFromRight {
+  from {
+    right: -25%;
+  }
+  to {
+    right: 0; 
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    right: 0;
+  }
+  to {
+    right: -25%; 
+  }
+}
+.section4Join{
+  position: fixed;
+   /* position: absolute; */
+   top: 0;
+   /* bottom: 0; */
+   font-size: 40px;
+   right: 0;
+   width: 25%;
+   background-color: rgb(17, 153, 17);
+   display: none;
+   justify-content: center;
+   z-index: 999999999999999999999;
+}
+.rightAnimation{
+   animation: slideInFromRight 0.75s ease forwards;
+}
+.leftAnimation{
+   animation: slideInFromLeft 0.75s ease forwards;
+}

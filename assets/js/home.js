@@ -56,6 +56,17 @@ document.querySelector('#btnJoin').addEventListener('click', async function (e) 
         }
         set(ref(db, `JoinUs/${snapshot.key}`), join)
     })
+    const section4 = document.querySelector('.section4Join')
+    section4.classList.add('rightAnimation')
+    section4.style.display = 'flex'
+    setTimeout(function () {
+        section4.classList.remove('rightAnimation')
+        section4.classList.add('leftAnimation')
+    }, 1000)
+    setTimeout(function () {
+        section4.classList.remove('leftAnimation')
+        section4.style.display = 'none'
+    }, 1500)
     nameJoin.value = ''
     emailJoin.value = ''
 })
