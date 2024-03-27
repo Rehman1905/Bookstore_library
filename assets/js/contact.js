@@ -48,4 +48,17 @@ document.querySelector('#contactBtn').addEventListener('click',async function(e)
     contactPhone.value=''
     contactEmail.value=''
     textareaContact.value=''
+
+    const section4 = document.querySelector('.section4')
+    section4.classList.add('rightAnimation')
+    section4.style.display = 'flex'
+    setTimeout(function () {
+        section4.classList.remove('rightAnimation')
+        section4.classList.add('leftAnimation')
+    }, 1000)
+    setTimeout(function () {
+        section4.classList.remove('leftAnimation')
+        section4.style.display = 'none'
+    }, 1500)
 })
+
