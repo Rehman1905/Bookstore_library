@@ -2,7 +2,7 @@ body {
     width: 100%;
     line-height: normal;
     background-color: rgb(255, 250, 245);
-    overflow: auto !important;
+    overflow: auto ;
   }
   
   .navbar {
