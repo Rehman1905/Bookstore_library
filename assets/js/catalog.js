@@ -402,6 +402,7 @@ function updateCommit(e) {
 
     }
 }
+
 var backButton = document.querySelector('.backButton')
 backButton.addEventListener('click', function (e) {
     e.preventDefault

@@ -979,3 +979,8 @@ body {
  .leftAnimation{
      animation: slideInFromLeft 0.75s ease forwards;
  }
+ @media (max-width:900) {
+  .section4{
+    font-size: 15px;
+  }
+ }
