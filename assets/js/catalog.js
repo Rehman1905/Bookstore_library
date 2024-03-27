@@ -373,7 +373,7 @@ function updateCommit(e) {
         commentText.appendChild(newCommentDiv);
         newCommentDiv.classList.add('text2');
 
-=======
+
 
         var newUserNameDiv = document.createElement('div');
         newUserNameDiv.classList.add('userName');
