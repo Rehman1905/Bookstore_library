@@ -401,4 +401,4 @@ var backButton = document.querySelector('.backButton')
 backButton.addEventListener('click', function (e) {
     e.preventDefault
     window.location.href = './catalog.html'
-}
+})
