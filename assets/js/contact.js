@@ -15,10 +15,13 @@ document.querySelector('#contactBtn').addEventListener('click',async function(e)
         return
     }else if(!contactEmail.value.includes('@')){
         alert('write the email correctly')
+        return
     }else if(contactAddres.value.trim()==''){
         alert('enter address')
+        return
     }else if(contactPhone.value.trim()==''){
         alert('enter phone')
+        return
     }
     const snapshot=push(ref(db,'JoinUs'))
     await get(ref(db,'contact')).then(e=>{
@@ -46,7 +49,6 @@ document.querySelector('#contactBtn').addEventListener('click',async function(e)
     contactEmail.value=''
     textareaContact.value=''
 
-
     const section4 = document.querySelector('.section4')
     section4.classList.add('rightAnimation')
     section4.style.display = 'flex'
@@ -59,3 +61,4 @@ document.querySelector('#contactBtn').addEventListener('click',async function(e)
         section4.style.display = 'none'
     }, 1500)
 })
+
