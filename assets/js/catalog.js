@@ -374,6 +374,5 @@ function updateCommit(e) {
 var backButton = document.querySelector('.backButton')
 backButton.addEventListener('click', function (e) {
     e.preventDefault()
-   catalogDiv.style.display = 'none'
-    bookPage.style.display = 'block'
+   window.location.href='./catalog.html'
 })
