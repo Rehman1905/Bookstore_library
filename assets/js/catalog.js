@@ -349,6 +349,32 @@ function updateCommit(e) {
         var newTopDiv = document.createElement('div');
         newTopDiv.classList.add('textTop');
 
+
+        var newUserNameDiv = document.createElement('div');
+        newUserNameDiv.classList.add('userName');
+        newUserNameDiv.textContent = 'Anonim';
+
+        var newDateDiv = document.createElement('div');
+        newDateDiv.classList.add('dateUser');
+        var now = new Date();
+        var time = now.getHours() + ':' + now.getMinutes();
+        newDateDiv.textContent = data[i].date;
+
+        newTopDiv.appendChild(newUserNameDiv);
+        newTopDiv.appendChild(newDateDiv);
+
+        var newTextDiv = document.createElement('div');
+        newTextDiv.classList.add('textArea');
+        newTextDiv.textContent = data[i].text;
+
+        newCommentDiv.appendChild(newTopDiv);
+        newCommentDiv.appendChild(newTextDiv);
+
+        commentText.appendChild(newCommentDiv);
+        newCommentDiv.classList.add('text2');
+
+=======
+
         var newUserNameDiv = document.createElement('div');
         newUserNameDiv.classList.add('userName');
         newUserNameDiv.textContent = 'Anonim';
@@ -373,10 +399,11 @@ function updateCommit(e) {
         newCommentDiv.classList.add('text2');
 
 
+
     }
 }
 var backButton = document.querySelector('.backButton')
 backButton.addEventListener('click', function (e) {
     e.preventDefault
     window.location.href = './catalog.html'
-})
+
