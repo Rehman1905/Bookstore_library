@@ -89,6 +89,17 @@ document.querySelector('#btnJoin').addEventListener('click', async function (e) 
     })
     nameJoin.value = ''
     emailJoin.value = ''
+    const section4 = document.querySelector('.section4')
+section4.classList.add('rightAnimation')
+    section4.style.display = 'flex'
+    setTimeout(function () {
+        section4.classList.remove('rightAnimation')
+        section4.classList.add('leftAnimation')
+    }, 1000)
+    setTimeout(function () {
+        section4.classList.remove('leftAnimation')
+        section4.style.display = 'none'
+    }, 1500)
 })
 document.querySelector('#exit').addEventListener('click', function (e) {
     section5.style.display = 'none'
