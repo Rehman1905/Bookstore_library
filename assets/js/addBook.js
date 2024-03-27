@@ -31,7 +31,7 @@ document.querySelector('#addBookBtn').addEventListener('click', function (e) {
         alert('enter description')
         return
     }
-    section4.classList.add('rightAnimation')
+section4.classList.add('rightAnimation')
 section4.style.display = 'flex'
 setTimeout(function () {
     section4.classList.remove('rightAnimation')
